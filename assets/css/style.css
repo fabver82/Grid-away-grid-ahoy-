@@ -1,11 +1,13 @@
-@font-face {
-    font-family: Gideon;
-    src: url(./fonts/GideonRoman-Regular.ttf);
-}
+/* main font */
 @font-face {
     font-family: Arimo;
-    src: url(./fonts/Arimo-VariableFont_wght.ttf);
+    src: url(./assets/fonts/Arimo-VariableFont_wght.ttf);
   }
+/* extra fonts */
+@font-face {
+    font-family: Gideon;
+    src: url(./assets/fonts/GideonRoman-Regular.ttf);
+}
 /* variables */
 :root{
     --auto-grid-min-size: 16rem;
@@ -14,8 +16,6 @@
     --article-back-link-color:white;
     --button-color:rgb(134, 134, 236);
 }
-
-
 body{
     background-color: lightgrey;
     font-family: Arimo,'Times New Roman', Times, serif;
@@ -49,6 +49,7 @@ body{
     max-width: 60px;
 }
 .card-text{
+    margin-top: 0px;
     color:var(--text-color);
 }
 .card-link{
@@ -68,5 +69,3 @@ body{
 .upper{
     text-transform: uppercase;
 }
-
-
