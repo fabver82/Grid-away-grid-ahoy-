@@ -16,14 +16,15 @@
 body{
     background-color: lightgrey;
     font-family: Arimo,'Times New Roman', Times, serif;
+    margin-top:20px;
 }
 /* solution from discort for a responsive grid https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
-main{
+.container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
     grid-gap: var(--card-gap);
 }
-article{
+.card{
     background-color: var(--article-back-link-color);
     padding:30px 20px 30px 20px;
     display:flex;
@@ -34,21 +35,21 @@ article{
     border-radius: 10px;
 
 }
-article:hover{
+.card:hover{
     -webkit-box-shadow: -3px 12px 15px 1px rgba(0,0,0,0.3); 
     box-shadow: -3px 12px 15px 1px rgba(0,0,0,0.3);
 }
-p{
+.card-text{
     color:var(--text-color);
 }
-a{
+.card-link{
     padding:10px 20px;
     color: var(--text-color);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
 }
-a:hover{
+.card-link:hover{
     padding:10px 20px;
     border-radius: 20px;
     background-color: var(--button-color);
