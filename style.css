@@ -6,19 +6,25 @@
     font-family: Arimo;
     src: url(./fonts/Arimo-VariableFont_wght.ttf);
   }
+:root{
+    --auto-grid-min-size: 16rem;
+    --card-gap: 20px;
+    --text-color: grey;
+    --article-back-link-color:white;
+    --button-color:rgb(134, 134, 236);
+}
 body{
     background-color: lightgrey;
-    font-family: Arimo;
+    font-family: Arimo,'Times New Roman', Times, serif;
 }
 /* solution from discort for a responsive grid https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
 main{
-    --auto-grid-min-size: 16rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 20px;
+    grid-gap: var(--card-gap);
 }
 article{
-    background-color: white;
+    background-color: var(--article-back-link-color);
     padding:30px 20px 30px 20px;
     display:flex;
     flex-direction: column;
@@ -33,11 +39,11 @@ article:hover{
     box-shadow: -3px 12px 15px 1px rgba(0,0,0,0.3);
 }
 p{
-    color:grey;
+    color:var(--text-color);
 }
 a{
     padding:10px 20px;
-    color: grey;
+    color: var(--text-color);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -45,8 +51,8 @@ a{
 a:hover{
     padding:10px 20px;
     border-radius: 20px;
-    background-color: rgb(134, 134, 236);
-    color:white;
+    background-color: var(--button-color);
+    color:var(--article-back-link-color);
 }
 
 
