@@ -5,14 +5,18 @@
     grid-gap:10px;
 } */
 
-/* solution from discort https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
+/* solution from discort for a responsive grid https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
+body{
+    background-color: lightgrey;
+}
 main{
     --auto-grid-min-size: 16rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
     grid-gap: 20px;
 }
-section{
+article{
+    background-color: white;
     padding:30px 20px 30px 20px;
     display:flex;
     flex-direction: column;
@@ -20,8 +24,17 @@ section{
     justify-content: center;
 
 }
-section:hover{
+article:hover{
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
 }
+p{
+    color:grey;
+}
+a{
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 
