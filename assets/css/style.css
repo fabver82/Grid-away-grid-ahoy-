@@ -1,12 +1,12 @@
 /* main font */
 @font-face {
     font-family: Arimo;
-    src: url(./assets/fonts/Arimo-VariableFont_wght.ttf);
+    src: url(../fonts/Arimo-VariableFont_wght.ttf);
   }
 /* extra fonts */
 @font-face {
     font-family: Gideon;
-    src: url(./assets/fonts/GideonRoman-Regular.ttf);
+    src: url(../fonts/GideonRoman-Regular.ttf);
 }
 /* variables */
 :root{
