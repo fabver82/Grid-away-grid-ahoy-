@@ -1,3 +1,8 @@
+@font-face {
+    font-family: GideonFont;
+    src: url(./fonts/GideonRoman-Regular.ttf);
+  }
+
 /* main{
     display:grid;
     grid-template-columns: auto auto auto auto;
@@ -8,6 +13,7 @@
 /* solution from discort for a responsive grid https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
 body{
     background-color: lightgrey;
+    font-family: GideonFont;
 }
 main{
     --auto-grid-min-size: 16rem;
@@ -32,9 +38,17 @@ p{
     color:grey;
 }
 a{
+    padding:10px 20px;
     color: grey;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    padding:10px 20px;
+    border-radius: 20px;
+    background-color: rgb(134, 134, 236);
+    color:white;
 }
 
 
