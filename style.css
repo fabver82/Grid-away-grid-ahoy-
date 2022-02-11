@@ -1,10 +1,17 @@
-main{
+/* main{
     display:grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
     grid-gap:10px;
-}
+} */
 
+/* solution from discort https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+}
 section{
     border:5px solid black;
 }
