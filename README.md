@@ -7,3 +7,5 @@ This repo show a html reponsive page with different cards containing details abo
 
 ## preview
 ![preview](gridcss.png)
+
+[Check it out here](https://fabver82.github.io/Grid-away-grid-ahoy-/)
